@@ -1,0 +1,49 @@
+:root {
+    --purple-button:#6d218b;
+    --gray-button:#999;
+}
+
+.container {
+    max-width: 400px;
+    margin: 10vh auto 0 auto;
+    box-shadow: 0px 9px 14px 7px rgba(0,0,0,0.39);
+}
+
+#display {
+    text-align: right;
+    height: 70px;
+    padding: 16px 8px;
+    font-size: 25px;
+    line-height: 70px;
+}
+
+.butonns {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    border-bottom: 1px solid var(--gray-button);
+    border-left: 1px solid var(--gray-button);
+}
+
+.buttons > div {
+    border-top: 1px solid var(--gray-button);
+    border-right: 1px solid var(--gray-button);
+}
+
+.button {
+    border: 0.5px solid var(--gray-button);
+    text-align: center;
+    font-size: 25px;
+    line-height: 100px;
+    cursor: pointer;
+}
+
+#equal {
+    background-color: var(--purple-button);
+    color: white;
+}
+
+.button:hover{
+    background-color: var(--purple-button);
+    color: white;
+    transition: 0.3s ease-in-out;
+}
